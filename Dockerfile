@@ -1,5 +1,14 @@
 FROM debian:jessie-slim
-MAINTAINER Dietrich Rordorf <dr@ediqo.com>
+
+# Docker compiler
+# MAINTAINER Murat BULBUL <murat.bulbul@biztek.com.tr>
+LABEL org.opencontainers.image.authors="Murat BULBUL <murat.bulbul@sobeyazilim.com.tr>"
+LABEL vendor="SOBE YAZILIM"
+LABEL url="https://www.sobeyazilim.com.tr"
+LABEL version="1.0.0"
+LABEL description="DLP&MALWARE ENGINE"
+LABEL build-date="2023-12-25T12:00:00Z"
+
 
 USER root
 
