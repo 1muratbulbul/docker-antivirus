@@ -1,0 +1,15 @@
+#!/bin/bash
+# docker-save nodehub 2023.05.11
+
+IMAGE=$1
+TAG=$2
+
+rm -rf /archive/images/*
+
+pushd /archive/images/
+
+docker save -o $IMAGE.docker sobeyazilim/$IMAGE:$TAG
+tar czvf $IMAGE.docker.tar.gz $IMAGE.docker
+scp -r $IMAGE.docker.tar.gz root@192.168.14.3:/archive/docker/
+
+popd
