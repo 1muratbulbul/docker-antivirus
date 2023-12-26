@@ -6,9 +6,8 @@ LABEL org.opencontainers.image.authors="Murat BULBUL <murat.bulbul@sobeyazilim.c
 LABEL vendor="SOBE YAZILIM"
 LABEL url="https://www.sobeyazilim.com.tr"
 LABEL version="1.0.0"
-LABEL description="DLP&MALWARE ENGINE"
+LABEL description="DEFENDER ENGINE"
 LABEL build-date="2023-12-25T12:00:00Z"
-
 
 USER root
 
